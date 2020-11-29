@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>468</width>
+    <height>313</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>468</width>
+    <height>313</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>468</width>
+    <height>313</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>СТЗПМ</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(200, 200, 200);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>230</y>
+      <width>181</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="playBtn">
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.152, y1:0.255682, x2:0.713, y2:0.443816, stop:0 rgba(120, 102, 202, 255), stop:1 rgba(171, 242, 213, 255));</string>
+       </property>
+       <property name="text">
+        <string>Звук On</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="stopBtn">
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.152, y1:0.255682, x2:0.713, y2:0.443816, stop:0 rgba(120, 102, 202, 255), stop:1 rgba(171, 242, 213, 255));</string>
+       </property>
+       <property name="text">
+        <string>Звук Off</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_port">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>0</y>
+      <width>281</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>239</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>6</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Версия: 1.2.5 Разработано компанией Churilov@Incorporatet</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>122</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="tables">
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.152, y1:0.255682, x2:0.713, y2:0.443816, stop:0 rgba(120, 102, 202, 255), stop:1 rgba(171, 242, 213, 255));</string>
+       </property>
+       <property name="text">
+        <string>Таблицы</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="teoretic">
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.152, y1:0.255682, x2:0.713, y2:0.443816, stop:0 rgba(120, 102, 202, 255), stop:1 rgba(171, 242, 213, 255));</string>
+       </property>
+       <property name="text">
+        <string>Теория</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="plotting">
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.152, y1:0.255682, x2:0.713, y2:0.443816, stop:0 rgba(120, 102, 202, 255), stop:1 rgba(171, 242, 213, 255));</string>
+       </property>
+       <property name="text">
+        <string>Построение графиков</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_calc">
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.152, y1:0.255682, x2:0.713, y2:0.443816, stop:0 rgba(120, 102, 202, 255), stop:1 rgba(171, 242, 213, 255));</string>
+       </property>
+       <property name="text">
+        <string>Калькулятор</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="facts_btn">
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.152, y1:0.255682, x2:0.713, y2:0.443816, stop:0 rgba(120, 102, 202, 255), stop:1 rgba(171, 242, 213, 255));</string>
+       </property>
+       <property name="text">
+        <string>Интересные факты</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>468</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuThemes">
+    <property name="title">
+     <string>Themes</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionBlack_theme"/>
+    <addaction name="separator"/>
+    <addaction name="actionStandart_theme"/>
+   </widget>
+   <addaction name="menuThemes"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionBlack_theme">
+   <property name="text">
+    <string>Black theme</string>
+   </property>
+  </action>
+  <action name="actionStandart_theme">
+   <property name="text">
+    <string>Standart theme</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

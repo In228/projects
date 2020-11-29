@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>611</width>
+    <height>508</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Теория</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(200, 200, 200);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="1">
+     <widget class="QPushButton" name="search_btn">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.152, y1:0.255682, x2:0.713, y2:0.443816, stop:0 rgba(120, 102, 202, 255), stop:1 rgba(171, 242, 213, 255));</string>
+      </property>
+      <property name="text">
+       <string>Поиск</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2" colspan="2">
+     <widget class="QComboBox" name="cmbB_table">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0.034, y2:0, stop:0 rgba(255, 255, 111, 255), stop:1 rgba(255, 255, 255, 255));</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2" colspan="2">
+     <widget class="QPushButton" name="filter_btn">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0.034, y2:0, stop:0 rgba(255, 255, 111, 255), stop:1 rgba(255, 255, 255, 255));</string>
+      </property>
+      <property name="text">
+       <string>Применить фильтр</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.152, y1:0.255682, x2:0.713, y2:0.443816, stop:0 rgba(120, 102, 202, 255), stop:1 rgba(171, 242, 213, 255));</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="3">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+    <item row="3" column="3">
+     <widget class="QSpinBox" name="text_size">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0.034, y2:0, stop:0 rgba(255, 255, 111, 255), stop:1 rgba(255, 255, 255, 255));</string>
+      </property>
+      <property name="minimum">
+       <number>8</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>611</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuThemes">
+    <property name="title">
+     <string>Themes</string>
+    </property>
+    <addaction name="actionBlack_theme"/>
+    <addaction name="separator"/>
+    <addaction name="actionStandart_theme"/>
+   </widget>
+   <addaction name="menuThemes"/>
+  </widget>
+  <action name="actionBlack_theme">
+   <property name="text">
+    <string>Black theme</string>
+   </property>
+  </action>
+  <action name="actionStandart_theme">
+   <property name="text">
+    <string>Standart theme</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
